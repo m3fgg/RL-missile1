@@ -1,0 +1,47 @@
+{
+    "MissileGuidance": {
+        "checkpoints": [
+            {
+                "steps": 299898,
+                "file_path": "results\\test4\\MissileGuidance\\MissileGuidance-299898.onnx",
+                "reward": -10.589801223741638,
+                "creation_time": 1795170337.1697528,
+                "auxillary_file_paths": [
+                    "results\\test4\\MissileGuidance\\MissileGuidance-299898.pt"
+                ]
+            },
+            {
+                "steps": 599831,
+                "file_path": "results\\test4\\MissileGuidance\\MissileGuidance-599831.onnx",
+                "reward": -14.012117348611355,
+                "creation_time": 1795170576.292495,
+                "auxillary_file_paths": [
+                    "results\\test4\\MissileGuidance\\MissileGuidance-599831.pt"
+                ]
+            },
+            {
+                "steps": 727588,
+                "file_path": "results\\test4\\MissileGuidance\\MissileGuidance-727588.onnx",
+                "reward": null,
+                "creation_time": 1795170742.0765898,
+                "auxillary_file_paths": [
+                    "results\\test4\\MissileGuidance\\MissileGuidance-727588.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 727588,
+            "file_path": "results\\test4\\MissileGuidance.onnx",
+            "reward": null,
+            "creation_time": 1795170742.0765898,
+            "auxillary_file_paths": [
+                "results\\test4\\MissileGuidance\\MissileGuidance-727588.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.5.1+cu121"
+    }
+}

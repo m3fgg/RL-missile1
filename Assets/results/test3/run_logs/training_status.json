@@ -1,0 +1,65 @@
+{
+    "MissileGuidance": {
+        "checkpoints": [
+            {
+                "steps": 299990,
+                "file_path": "results\\test3\\MissileGuidance\\MissileGuidance-299990.onnx",
+                "reward": 15.244962316912574,
+                "creation_time": 1795168090.134653,
+                "auxillary_file_paths": [
+                    "results\\test3\\MissileGuidance\\MissileGuidance-299990.pt"
+                ]
+            },
+            {
+                "steps": 599963,
+                "file_path": "results\\test3\\MissileGuidance\\MissileGuidance-599963.onnx",
+                "reward": 20.818657994270325,
+                "creation_time": 1795168391.6880798,
+                "auxillary_file_paths": [
+                    "results\\test3\\MissileGuidance\\MissileGuidance-599963.pt"
+                ]
+            },
+            {
+                "steps": 899985,
+                "file_path": "results\\test3\\MissileGuidance\\MissileGuidance-899985.onnx",
+                "reward": 20.788544265847456,
+                "creation_time": 1795168683.8644254,
+                "auxillary_file_paths": [
+                    "results\\test3\\MissileGuidance\\MissileGuidance-899985.pt"
+                ]
+            },
+            {
+                "steps": 1199985,
+                "file_path": "results\\test3\\MissileGuidance\\MissileGuidance-1199985.onnx",
+                "reward": 20.644892041823443,
+                "creation_time": 1795168972.6218314,
+                "auxillary_file_paths": [
+                    "results\\test3\\MissileGuidance\\MissileGuidance-1199985.pt"
+                ]
+            },
+            {
+                "steps": 1435485,
+                "file_path": "results\\test3\\MissileGuidance\\MissileGuidance-1435485.onnx",
+                "reward": 21.64985331945252,
+                "creation_time": 1795169278.0184646,
+                "auxillary_file_paths": [
+                    "results\\test3\\MissileGuidance\\MissileGuidance-1435485.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1435485,
+            "file_path": "results\\test3\\MissileGuidance.onnx",
+            "reward": 21.64985331945252,
+            "creation_time": 1795169278.0184646,
+            "auxillary_file_paths": [
+                "results\\test3\\MissileGuidance\\MissileGuidance-1435485.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.5.1+cu121"
+    }
+}
