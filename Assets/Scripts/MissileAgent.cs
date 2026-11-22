@@ -41,6 +41,10 @@ public class MissileAgent : Agent
     private ParticleSystem.EmissionModule exhaustEmission;
 	
 	private bool hasHit;
+
+    public ObstacleField obstacleField;
+	
+	public bool isTrain;
 	
     public override void Initialize()
     {
@@ -76,6 +80,7 @@ public class MissileAgent : Agent
         if (target != null)
         {
             targetController.ResetTarget();
+            obstacleField.RandomizeObstacles();
             previousDistance = Vector3.Distance(transform.position, target.position);
             initialDistance = Mathf.Max(previousDistance, 1f);
             closestDistance = previousDistance;
@@ -175,7 +180,7 @@ public class MissileAgent : Agent
 
         Vector3 relVel = rb.linearVelocity - (targetRb != null ? targetRb.linearVelocity : Vector3.zero);
         bool flyingAway = Vector3.Dot(toTarget, relVel) < 0f;
-        if (terminalArmed && flyingAway && currentDistance > closestDistance + 3f)
+        if (terminalArmed && flyingAway && currentDistance > closestDistance + 3f && isTrain)
         {
             AddReward(-5.0f);
             EndEpisode();
@@ -207,6 +212,12 @@ public class MissileAgent : Agent
     private void OnTriggerEnter(Collider other)
     {
 		if (hasHit) return;
+        if (other.CompareTag("Obstacle"))
+        {
+            AddReward(-5.0f);
+            EndEpisode();
+            return;
+        }
         if (other.CompareTag("Target"))
         {
 			hasHit = true;

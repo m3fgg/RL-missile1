@@ -1,0 +1,65 @@
+{
+    "MissileGuidance": {
+        "checkpoints": [
+            {
+                "steps": 8999795,
+                "file_path": "results\\test8_wRayObstacles\\MissileGuidance\\MissileGuidance-8999795.onnx",
+                "reward": 29.97744998931885,
+                "creation_time": 1795373409.6133256,
+                "auxillary_file_paths": [
+                    "results\\test8_wRayObstacles\\MissileGuidance\\MissileGuidance-8999795.pt"
+                ]
+            },
+            {
+                "steps": 9299864,
+                "file_path": "results\\test8_wRayObstacles\\MissileGuidance\\MissileGuidance-9299864.onnx",
+                "reward": 32.55066283543905,
+                "creation_time": 1795373712.8036764,
+                "auxillary_file_paths": [
+                    "results\\test8_wRayObstacles\\MissileGuidance\\MissileGuidance-9299864.pt"
+                ]
+            },
+            {
+                "steps": 9599928,
+                "file_path": "results\\test8_wRayObstacles\\MissileGuidance\\MissileGuidance-9599928.onnx",
+                "reward": 42.412837982177734,
+                "creation_time": 1795374015.1820421,
+                "auxillary_file_paths": [
+                    "results\\test8_wRayObstacles\\MissileGuidance\\MissileGuidance-9599928.pt"
+                ]
+            },
+            {
+                "steps": 9899917,
+                "file_path": "results\\test8_wRayObstacles\\MissileGuidance\\MissileGuidance-9899917.onnx",
+                "reward": null,
+                "creation_time": 1795374318.594121,
+                "auxillary_file_paths": [
+                    "results\\test8_wRayObstacles\\MissileGuidance\\MissileGuidance-9899917.pt"
+                ]
+            },
+            {
+                "steps": 10000003,
+                "file_path": "results\\test8_wRayObstacles\\MissileGuidance\\MissileGuidance-10000003.onnx",
+                "reward": 26.102326280930463,
+                "creation_time": 1795374422.4152656,
+                "auxillary_file_paths": [
+                    "results\\test8_wRayObstacles\\MissileGuidance\\MissileGuidance-10000003.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 10000003,
+            "file_path": "results\\test8_wRayObstacles\\MissileGuidance.onnx",
+            "reward": 26.102326280930463,
+            "creation_time": 1795374422.4152656,
+            "auxillary_file_paths": [
+                "results\\test8_wRayObstacles\\MissileGuidance\\MissileGuidance-10000003.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.5.1+cu121"
+    }
+}
