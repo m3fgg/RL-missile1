@@ -11,8 +11,6 @@ public static class SceneViewMarkers
     {
         SceneView.duringSceneGui += OnSceneGUI;
     }
-
-    // Adds a clickable button under "Tools -> Toggle Scene Markers" AND binds the 'M' key
     [MenuItem("Tools/Toggle Scene Markers _m")]
     public static void ToggleMarkers()
     {
@@ -30,8 +28,6 @@ public static class SceneViewMarkers
         Handles.BeginGUI();
 
         Color prevColor = GUI.backgroundColor;
-
-        // Draw green 2D UI markers for all on-screen missiles
         GUI.backgroundColor = new Color(0.2f, 1f, 0.4f, 0.9f);
         foreach (var agent in agents)
         {
@@ -41,7 +37,6 @@ public static class SceneViewMarkers
             }
         }
 
-        // Draw red 2D UI markers for all on-screen targets
         GUI.backgroundColor = new Color(1f, 0.25f, 0.25f, 0.9f);
         foreach (var target in targets)
         {
@@ -57,7 +52,6 @@ public static class SceneViewMarkers
 
     private static void DrawMarker(Vector3 worldPos, SceneView sceneView, string label)
     {
-        // Converts 3D world position to 2D Scene-view GUI coordinates (z > 0 means in front of camera)
         Vector3 guiPos = HandleUtility.WorldToGUIPointWithDepth(worldPos);
 
         if (guiPos.z <= 0f) return;

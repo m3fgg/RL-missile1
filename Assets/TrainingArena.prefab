@@ -347,14 +347,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7170310234856686877}
     m_Modifications:
-    - target: {fileID: 3190144338295934029, guid: da490944baefa424198d3645b9ebd784, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3446672336446514071, guid: da490944baefa424198d3645b9ebd784, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: -2478382723919055575, guid: 75acb899eb0b2904e9e9e77077d655ab, type: 3}
     - target: {fileID: 4701886634749181402, guid: da490944baefa424198d3645b9ebd784, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -395,33 +387,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4917830780755025610, guid: da490944baefa424198d3645b9ebd784, type: 3}
-      propertyPath: m_Model
-      value: 
-      objectReference: {fileID: 5022602860645237092, guid: 659449e77546a844f94a8ec4872f5b69, type: 3}
-    - target: {fileID: 4917830780755025610, guid: da490944baefa424198d3645b9ebd784, type: 3}
-      propertyPath: m_BehaviorType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5143961798261720846, guid: da490944baefa424198d3645b9ebd784, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: -765902065948535368, guid: 75acb899eb0b2904e9e9e77077d655ab, type: 3}
     - target: {fileID: 5728671130203226220, guid: da490944baefa424198d3645b9ebd784, type: 3}
       propertyPath: m_Name
-      value: Agent
-      objectReference: {fileID: 0}
-    - target: {fileID: 7171120968763973185, guid: da490944baefa424198d3645b9ebd784, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7171120968763973185, guid: da490944baefa424198d3645b9ebd784, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7171120968763973185, guid: da490944baefa424198d3645b9ebd784, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.2
+      value: RocketAgent
       objectReference: {fileID: 0}
     - target: {fileID: 7422138613732802657, guid: da490944baefa424198d3645b9ebd784, type: 3}
       propertyPath: arena
@@ -431,26 +399,6 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 4242496475586591306}
-    - target: {fileID: 7422138613732802657, guid: da490944baefa424198d3645b9ebd784, type: 3}
-      propertyPath: MaxStep
-      value: 750
-      objectReference: {fileID: 0}
-    - target: {fileID: 7422138613732802657, guid: da490944baefa424198d3645b9ebd784, type: 3}
-      propertyPath: minThrust
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 7422138613732802657, guid: da490944baefa424198d3645b9ebd784, type: 3}
-      propertyPath: maxPitchYawTorque
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 8981229872914969455, guid: da490944baefa424198d3645b9ebd784, type: 3}
-      propertyPath: DecisionPeriod
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8981229872914969455, guid: da490944baefa424198d3645b9ebd784, type: 3}
-      propertyPath: TakeActionsBetweenDecisions
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
