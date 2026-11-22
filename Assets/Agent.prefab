@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4701886634749181402}
@@ -41,7 +41,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4831386137478152181}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -765902065948535368, guid: 75acb899eb0b2904e9e9e77077d655ab, type: 3}
 --- !u!23 &3446672336446514071
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -67,7 +67,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9ac7672d35855af42b6dd47c172ebaa3, type: 2}
+  - {fileID: 2100000, guid: dadefef0edf68504b971d5e8b275586d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -273,6 +273,5 @@ MonoBehaviour:
   aerodynamicAngularDamping: 1.5
   maxArenaRadius: 1000
   initialLaunchSpeed: 25
-  maxTargetSpeed: 15
   maxWindSpeed: 12
   arena: {fileID: 0}
