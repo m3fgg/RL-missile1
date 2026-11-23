@@ -63,14 +63,25 @@ public class MissileAgent : Agent
     {
 		CancelInvoke(nameof(EndEpisode));
 		hasHit = false;
-        transform.position = arenaOrigin;
+        
         float randomPitch = Random.Range(-10f, -60f);
         float randomYaw = Random.Range(0, 360f);
-        transform.rotation = Quaternion.Euler(randomPitch, randomYaw, 0f);
+        Quaternion spawnRot = Quaternion.Euler(randomPitch, randomYaw, 0f);
 
+		RigidbodyInterpolation cachedInterpolation = rb.interpolation;
+        rb.interpolation = RigidbodyInterpolation.None;
+		
+		transform.position = arenaOrigin;
+		transform.rotation = spawnRot;
+		rb.position = arenaOrigin;
+        rb.rotation = spawnRot;
+		
+		
         rb.linearVelocity = transform.forward * initialLaunchSpeed;
         rb.angularVelocity = Vector3.zero;
-
+		Physics.SyncTransforms();
+		rb.interpolation = cachedInterpolation;
+		
         baseWind = new Vector3(
             Random.Range(-maxWindSpeed, maxWindSpeed),
             Random.Range(-maxWindSpeed * 0.3f, maxWindSpeed * 0.3f),
